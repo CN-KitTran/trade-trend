@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:sensing:v3.0-draft-1",
+  "type": "object",
+  "required": ["artifact_kind", "schema_version", "schema_ref", "producer_version", "created_at", "artifact_hash", "session", "release_mode", "decision_date", "market_data_as_of", "market_data_captured_at", "source_universe_version", "information_cutoff", "run_window_status", "observations_ref", "theme_registry_ref", "coverage_permission_matrix_ref", "theme_cards", "eligible_theme_count", "judged_theme_count", "validation", "theme_decisions"],
+  "properties": {
+    "artifact_kind": {"const": "sensing"},
+    "session": {"const": "PREOPEN"},
+    "release_mode": {"enum": ["INTERNAL_GATE", "SHADOW", "OFFICIAL"]},
+    "run_window_status": {"enum": ["EARLY_DRAFT", "ELIGIBLE", "LATE_REJECTED"]},
+    "theme_cards": {"type": "array"},
+    "theme_decisions": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/theme_decision"}
+    }
+  },
+  "$defs": {
+    "axis_decision": {
+      "type": "object",
+      "required": ["signal", "structure_type", "path_pattern", "evidence_refs", "reason"],
+      "properties": {
+        "signal": {"enum": ["NONE", "WATCH", "CANDIDATE"]},
+        "structure_type": {"type": ["string", "null"]},
+        "path_pattern": {"enum": ["IMPULSE", "PERSISTENT", null]},
+        "evidence_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "reason": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "theme_decision": {
+      "type": "object",
+      "required": ["theme_id", "opportunity", "risk", "derived_decision"],
+      "properties": {
+        "theme_id": {"type": "string", "minLength": 1},
+        "opportunity": {"$ref": "#/$defs/axis_decision"},
+        "risk": {"$ref": "#/$defs/axis_decision"},
+        "derived_decision": {"enum": ["NONE", "WATCH", "OPPORTUNITY", "RISK", "BOTH"]}
+      },
+      "additionalProperties": false
+    }
+  }
+}

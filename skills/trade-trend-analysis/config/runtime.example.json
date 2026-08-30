@@ -1,0 +1,8 @@
+{
+  "config_version": "EXAMPLE-NOT-APPROVED-FOR-UNATTENDED-RUNS",
+  "timezone": "Asia/Shanghai",
+  "official_run_window": {"start_at": "08:00:00", "end_at": "09:10:00"},
+  "information_cutoff_at": "09:14:59",
+  "auction_start_at": "09:15:00",
+  "notice": "示例值；正式运行前必须由部署配置冻结、验收迟到/并发/节假日并取得发布锁。"
+}

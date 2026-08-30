@@ -1,0 +1,273 @@
+{
+  "schema": "trade-trend-analysis.acceptance-fixtures.v1",
+  "spec_version": "V0.51",
+  "cases": [
+    {
+      "id": "complete_core_frame",
+      "kind": "core_frame",
+      "frame": {
+        "frame_kind": "CLOSE",
+        "market_data_as_of": "2026-08-21",
+        "lookback_trading_days": 60,
+        "coverage_type": "FULL",
+        "history_coverage": "FULL",
+        "benchmark": {
+          "benchmark_id": "stable-full-a-benchmark",
+          "history_coverage": "FULL",
+          "trading_dates": [
+            "2026-08-18",
+            "2026-08-19",
+            "2026-08-20",
+            "2026-08-21"
+          ],
+          "sample_count": 60
+        },
+        "sector_trading_dates": [
+          "2026-08-18",
+          "2026-08-19",
+          "2026-08-20",
+          "2026-08-21"
+        ],
+        "windows": {
+          "L1": "FULL",
+          "L5": "FULL",
+          "L20": "FULL",
+          "L60": "FULL"
+        },
+        "close_confirmation": {
+          "capture_eligible": true
+        },
+        "catalog_version": "sha256:cat-v1",
+        "history_sample_count": 60
+      },
+      "identity": {
+        "requested_as_of": "2026-08-21",
+        "verified_close_frame_id": "close-20260821",
+        "coverage_type": "FULL",
+        "catalog_version": "sha256:cat-v1"
+      },
+      "expected": "VALID"
+    },
+    {
+      "id": "missing_L1",
+      "extends": "complete_core_frame",
+      "remove": [
+        "frame.windows.L1"
+      ],
+      "expected": "INVALID"
+    },
+    {
+      "id": "missing_L5",
+      "extends": "complete_core_frame",
+      "remove": [
+        "frame.windows.L5"
+      ],
+      "expected": "INVALID"
+    },
+    {
+      "id": "missing_L20",
+      "extends": "complete_core_frame",
+      "remove": [
+        "frame.windows.L20"
+      ],
+      "expected": "INVALID"
+    },
+    {
+      "id": "missing_L60",
+      "extends": "complete_core_frame",
+      "remove": [
+        "frame.windows.L60"
+      ],
+      "expected": "INVALID"
+    },
+    {
+      "id": "missing_benchmark",
+      "extends": "complete_core_frame",
+      "remove": [
+        "frame.benchmark"
+      ],
+      "expected": "INVALID"
+    },
+    {
+      "id": "benchmark_wrong_dates",
+      "extends": "complete_core_frame",
+      "override": {
+        "frame.benchmark.trading_dates": [
+          "2026-08-18",
+          "2026-08-19",
+          "2026-08-21"
+        ]
+      },
+      "expected": "INVALID"
+    },
+    {
+      "id": "wrong_direction_data",
+      "extends": "complete_core_frame",
+      "override": {
+        "frame.direction_data_status": "WRONG_DIRECTION"
+      },
+      "expected": "INVALID_NO_DOWNGRADE"
+    },
+    {
+      "id": "d_plus_1_weekend",
+      "kind": "calendar",
+      "market_data_as_of": "2026-08-21",
+      "decision_date": "2026-08-24",
+      "calendar": {
+        "trading_dates": [
+          "2026-08-21",
+          "2026-08-24"
+        ]
+      },
+      "expected": "VALID"
+    },
+    {
+      "id": "d_plus_1_holiday",
+      "kind": "calendar",
+      "market_data_as_of": "2026-10-01",
+      "decision_date": "2026-10-09",
+      "calendar": {
+        "trading_dates": [
+          "2026-09-30",
+          "2026-10-09"
+        ]
+      },
+      "expected": "INVALID_DATE_PAIR"
+    },
+    {
+      "id": "mapping_incomplete_with_proxy",
+      "kind": "theme_mapping",
+      "mapping_status": "INCOMPLETE",
+      "has_verified_proxy": true,
+      "expected": {
+        "market_permission": "WATCH_ONLY",
+        "opportunity_signal_max": "WATCH",
+        "risk_signal_max": "WATCH",
+        "formal_state": false,
+        "stock_selection": false
+      }
+    },
+    {
+      "id": "mapping_incomplete_without_proxy",
+      "kind": "theme_mapping",
+      "mapping_status": "INCOMPLETE",
+      "has_verified_proxy": false,
+      "expected": {
+        "market_permission": "NO_DIRECTION",
+        "direction_llm": false,
+        "formal_state": false,
+        "stock_selection": false
+      }
+    },
+    {
+      "id": "one_day_only",
+      "kind": "signals",
+      "evidence": {
+        "price": {
+          "1D": 5.0
+        },
+        "breadth": {},
+        "attention": {}
+      },
+      "expected": {
+        "opportunity_signal_max": "WATCH",
+        "risk_signal_max": "WATCH",
+        "candidate": false
+      }
+    },
+    {
+      "id": "internal_shadow_official_isolation",
+      "kind": "isolation",
+      "runs": [
+        {
+          "run_id": "internal-001",
+          "mode": "INTERNAL_GATE",
+          "output_root": "engineering/internal/2026-08-21",
+          "official": false
+        },
+        {
+          "run_id": "shadow-001",
+          "mode": "SHADOW",
+          "output_root": "engineering/shadow/2026-08-21",
+          "official": false
+        },
+        {
+          "run_id": "official-001",
+          "mode": "OFFICIAL",
+          "output_root": "published/preopen/2026-08-24",
+          "official": true
+        }
+      ],
+      "expected": "ISOLATED"
+    },
+    {
+      "id": "historical_immutable",
+      "kind": "immutability",
+      "history": {
+        "run_id": "official-001",
+        "content_hash": "sha256:old",
+        "path": "ledger/2026-08-24/official-001.json"
+      },
+      "amendment": {
+        "run_id": "official-001-amend-1",
+        "content_hash": "sha256:new",
+        "path": "ledger/2026-08-24/official-001-amend-1.json",
+        "reason": "deterministic_data_repair"
+      },
+      "expected": "APPEND_ONLY"
+    },
+    {
+      "id": "report_capacity",
+      "kind": "report",
+      "ledger": {
+        "opportunities": [
+          {
+            "theme_id": "theme-a",
+            "candidates": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ]
+          }
+        ]
+      },
+      "expected": {
+        "max_candidates_per_opportunity": 3,
+        "ledger_preserves_all": true,
+        "no_trade_instructions": true
+      }
+    },
+    {
+      "id": "correction_fails_twice",
+      "kind": "correction",
+      "previous": {
+        "theme-a": {
+          "opportunity_stage": "ACTIVE",
+          "risk_level": "HIGH",
+          "candidate_ids": [
+            "000001"
+          ]
+        }
+      },
+      "attempts": [
+        {
+          "valid": false,
+          "reason": "missing_evidence_ref"
+        },
+        {
+          "valid": false,
+          "reason": "illegal_state_transition"
+        }
+      ],
+      "new_theme": "theme-new",
+      "expected": {
+        "run_status": "FAILED",
+        "carry_forward": true,
+        "new_theme_state": "NO_FORMAL_STATE",
+        "emit_same_event": false,
+        "copy_candidates": false
+      }
+    }
+  ]
+}

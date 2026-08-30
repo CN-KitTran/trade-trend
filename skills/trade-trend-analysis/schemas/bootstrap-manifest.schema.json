@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:bootstrap-manifest:source-first-bootstrap-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "bootstrap_version",
+    "bundle_version",
+    "status",
+    "runtime_eligible",
+    "market_date",
+    "input_refs",
+    "output_refs",
+    "source_accounting",
+    "blocking_reasons",
+    "safety_note"
+  ],
+  "properties": {
+    "bootstrap_version": {"const": "source-first-bootstrap-v1"},
+    "bundle_version": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "status": {"enum": ["READY", "PROPOSAL_ONLY"]},
+    "runtime_eligible": {"type": "boolean"},
+    "market_date": {"type": "string", "format": "date"},
+    "input_refs": {
+      "type": "object",
+      "required": ["sector_market_frame", "sector_identity", "calendar_source", "runtime_source", "concept_decision_source"]
+    },
+    "output_refs": {
+      "type": "object",
+      "required": ["theme_registry", "coverage_permission_matrix", "runtime_config", "trading_calendar", "concept_review_packet", "concept_decisions"],
+      "properties": {
+        "theme_registry": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "coverage_permission_matrix": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "runtime_config": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "trading_calendar": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "concept_review_packet": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "concept_decisions": {"type": ["string", "null"], "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    },
+    "source_accounting": {
+      "type": "object",
+      "required": ["catalog_count", "primary_count", "reference_count", "mapped_stable_count", "mapped_provisional_count", "excluded_primary_count", "accounted_primary_count", "provisional_label_count"]
+    },
+    "blocking_reasons": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "safety_note": {"type": "string", "minLength": 1}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "READY"}}},
+      "then": {
+        "properties": {
+          "runtime_eligible": {"const": true},
+          "blocking_reasons": {"maxItems": 0}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"status": {"const": "PROPOSAL_ONLY"}}},
+      "then": {
+        "properties": {
+          "runtime_eligible": {"const": false},
+          "blocking_reasons": {"minItems": 1}
+        }
+      }
+    }
+  ]
+}

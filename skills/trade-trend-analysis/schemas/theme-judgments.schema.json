@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:theme-judgments:v3.0-draft-1",
+  "type": "object",
+  "required": ["artifact_kind", "schema_version", "schema_ref", "producer_version", "created_at", "artifact_hash", "review_theme_ids", "market_regime_ref", "regime_input_hash", "themes"],
+  "properties": {
+    "artifact_kind": {"const": "theme_judgments"},
+    "review_theme_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "market_regime_ref": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "regime_input_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["theme_id", "decision_validation_status", "state_provenance", "opportunity_stage", "risk_level", "market_role", "opportunity_driver", "risk_types", "regime_alignment", "regime_interpretation"],
+        "properties": {
+          "theme_id": {"type": "string", "minLength": 1},
+          "decision_validation_status": {"enum": ["VALID", "CORRECTED", "FAILED"]},
+          "opportunity_stage": {"enum": [null, "FORMING", "ACTIVE", "MATURE", "INVALID"]},
+          "risk_level": {"enum": [null, "LOW", "CAUTION", "HIGH", "EXIT"]},
+          "market_role": {"enum": ["REGIME_LEADER", "RECEIVER", "DONOR", "INDEPENDENT", "COUNTER_REGIME", "CROWDED", "NEUTRAL"]},
+          "opportunity_driver": {"enum": [null, "INDUSTRY", "REGIME", "DUAL", "EVENT", "PRICE_ONLY"]},
+          "risk_types": {
+            "type": "array", "uniqueItems": true,
+            "items": {"enum": ["INDUSTRY", "MARKET_TREND", "STYLE_RETREAT", "CAPITAL_OUTFLOW", "CROWDING", "EVENT_POLICY", "MIXED"]}
+          },
+          "regime_alignment": {"enum": ["ALIGNED", "COUNTER", "MIXED", "NEUTRAL"]},
+          "regime_interpretation": {"type": "string", "minLength": 1}
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"opportunity_stage": {"enum": ["FORMING", "ACTIVE", "MATURE"]}}, "required": ["opportunity_stage"]},
+            "then": {"properties": {"opportunity_driver": {"enum": ["INDUSTRY", "REGIME", "DUAL", "EVENT"]}}}
+          },
+          {
+            "if": {"properties": {"risk_level": {"enum": ["CAUTION", "HIGH", "EXIT"]}}, "required": ["risk_level"]},
+            "then": {"properties": {"risk_types": {"minItems": 1}}}
+          }
+        ]
+      }
+    }
+  }
+}

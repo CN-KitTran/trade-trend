@@ -1,0 +1,95 @@
+{
+  "schema": "trade-trend-analysis.acceptance-manifest.v1",
+  "spec_version": "V0.51",
+  "runner": "python -m unittest discover -s tests -p 'test_*.py'",
+  "fixture": "evals/fixtures/acceptance_cases.json",
+  "cases_are_contract_fixtures": true,
+  "production_adapter": {
+    "status": "AVAILABLE_PARTIAL",
+    "description": "INTERNAL_GATE first-run CLI skeleton is present and subprocess-verifiable; all unsupported continuity, alert, stock, midday and official paths fail closed.",
+    "verified_test_count": 71,
+    "scripts": [
+      "scripts/bootstrap_dependencies.py",
+      "scripts/freeze_market.py",
+      "scripts/build_observations.py",
+      "scripts/run_preopen.py",
+      "scripts/model_io.py",
+      "scripts/validate_outputs.py",
+      "scripts/update_ledger.py",
+      "scripts/render_report.py"
+    ],
+    "test_module": "tests/test_v3_subprocess_contracts.py",
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "known_expected_failures": []
+  },
+  "acceptance_ids": {
+    "core_completeness_gate": [
+      "125",
+      "127",
+      "128",
+      "133"
+    ],
+    "wrong_direction_no_downgrade": [
+      "43",
+      "125",
+      "128"
+    ],
+    "close_to_preopen_dates": [
+      "38",
+      "41",
+      "50",
+      "52",
+      "255",
+      "256",
+      "259"
+    ],
+    "required_windows_and_benchmark": [
+      "98",
+      "112",
+      "114",
+      "257",
+      "286"
+    ],
+    "mapping_watch_only": [
+      "130",
+      "262",
+      "263"
+    ],
+    "one_day_not_signal_alone": [
+      "62",
+      "69",
+      "70",
+      "86"
+    ],
+    "internal_shadow_official_isolation": [
+      "252",
+      "254",
+      "296",
+      "302"
+    ],
+    "history_immutable": [
+      "132",
+      "217",
+      "249",
+      "285",
+      "286"
+    ],
+    "report_capacity_and_three_candidates": [
+      "177",
+      "181",
+      "186",
+      "196",
+      "197",
+      "279",
+      "280"
+    ],
+    "correction_failure_safe_carry": [
+      "89",
+      "121",
+      "245",
+      "269",
+      "270",
+      "298"
+    ]
+  }
+}

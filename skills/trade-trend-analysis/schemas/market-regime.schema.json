@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:market-regime:v3.0-draft-1",
+  "type": "object",
+  "required": [
+    "artifact_kind", "schema_version", "schema_ref", "producer_version",
+    "created_at", "artifact_hash", "regime_input_hash", "sensing_ref",
+    "market_regime", "risk_appetite",
+    "capital_migration", "duration", "contradictions", "confidence",
+    "evidence_refs", "limitations", "regime_review_nominations",
+    "correction_attempts"
+  ],
+  "properties": {
+    "artifact_kind": {"const": "market_regime"},
+    "schema_version": {"const": "v3.0-draft-1"},
+    "regime_input_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "sensing_ref": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "market_regime": {"type": "string", "minLength": 1},
+    "risk_appetite": {"type": "string", "minLength": 1},
+    "capital_migration": {
+      "type": "object",
+      "required": ["from_theme_ids", "to_theme_ids", "from_summary", "to_summary"],
+      "properties": {
+        "from_theme_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "to_theme_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "from_summary": {"type": "string", "minLength": 1},
+        "to_summary": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "duration": {"type": "string", "minLength": 1},
+    "contradictions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "confidence": {
+      "type": "object",
+      "required": ["level", "reason"],
+      "properties": {
+        "level": {"enum": ["HIGH", "MEDIUM", "LOW"]},
+        "reason": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "evidence_refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "regime_review_nominations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["theme_id", "review_axes", "rationale"],
+        "properties": {
+          "theme_id": {"type": "string", "minLength": 1},
+          "review_axes": {
+            "type": "array", "minItems": 1, "maxItems": 2, "uniqueItems": true,
+            "items": {"enum": ["OPPORTUNITY", "RISK"]}
+          },
+          "rationale": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "correction_attempts": {"type": "integer", "minimum": 0, "maximum": 1}
+  }
+}

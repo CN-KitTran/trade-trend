@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:universe:v3.0-draft-1",
+  "type": "object",
+  "required": ["artifact_kind", "schema_version", "schema_ref", "producer_version", "created_at", "artifact_hash", "universe_id", "analysis_universe_version", "as_of", "coverage_type", "source_accounting"],
+  "properties": {
+    "artifact_kind": {"const": "universe"},
+    "coverage_type": {"const": "FULL"},
+    "source_accounting": {"type": "array", "items": {"type": "object", "required": ["source_sector_id", "source_scope", "accounting_status"]}}
+  }
+}

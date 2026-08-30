@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:trading-calendar:v3.0-draft-1",
+  "type": "object",
+  "required": ["calendar_version", "timezone", "market", "trading_dates", "sessions"],
+  "properties": {
+    "calendar_version": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "timezone": {"const": "Asia/Shanghai"},
+    "market": {"type": "string", "minLength": 1},
+    "trading_dates": {"type": "array", "minItems": 2, "items": {"type": "string", "format": "date"}},
+    "sessions": {"type": "object", "additionalProperties": {"type": "object", "required": ["auction_start_at"], "properties": {"auction_start_at": {"type": "string", "format": "date-time"}}}}
+  }
+}

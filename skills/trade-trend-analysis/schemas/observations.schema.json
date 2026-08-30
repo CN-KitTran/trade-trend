@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:observations:v3.0-draft-1",
+  "title": "Source-first close observations",
+  "type": "object",
+  "required": ["artifact_kind", "schema_version", "schema_ref", "producer_version", "created_at", "artifact_hash", "market_data_as_of", "market_frame_hash", "identity_frame_hash", "source_count", "primary_source_count", "accounted_source_count", "source_observations"],
+  "properties": {
+    "artifact_kind": {"const": "observations"},
+    "schema_version": {"const": "v3.0-draft-1"},
+    "artifact_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "market_data_as_of": {"type": "string", "format": "date"},
+    "source_count": {"type": "integer", "minimum": 0},
+    "primary_source_count": {"type": "integer", "minimum": 0},
+    "accounted_source_count": {"type": "integer", "minimum": 0},
+    "source_observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_sector_id", "source_scope", "direction_permission", "limitations", "provenance"],
+        "properties": {
+          "source_sector_id": {"type": "string", "minLength": 1},
+          "source_scope": {"enum": ["PRIMARY", "REFERENCE"]},
+          "direction_permission": {"enum": ["ELIGIBLE_SOURCE_OBSERVATION", "NO_DIRECTION_SOURCE_OBSERVATION", "REFERENCE_ONLY"]},
+          "data_health": {"type": "object", "properties": {"price": {"enum": ["SUFFICIENT", "LIMITED", "INVALID"]}, "breadth": {"enum": ["SUFFICIENT", "LIMITED", "INVALID"]}, "attention": {"enum": ["SUFFICIENT", "LIMITED", "INVALID"]}}},
+          "limitations": {"type": "array", "items": {"type": "string"}},
+          "provenance": {"type": "array", "minItems": 1}
+        }
+      }
+    }
+  }
+}

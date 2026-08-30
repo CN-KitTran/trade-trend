@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:bootstrap-calendar-source:v1",
+  "type": "object",
+  "required": ["source_kind", "source_name", "source_version", "timezone", "market", "trading_dates", "sessions"],
+  "properties": {
+    "source_kind": {"enum": ["USER_EXPLICIT", "AUTHORITATIVE", "STRUCTURED_PROVIDER"]},
+    "source_name": {"type": "string", "minLength": 1},
+    "source_version": {"type": "string", "minLength": 1},
+    "timezone": {"const": "Asia/Shanghai"},
+    "market": {"const": "CN_A"},
+    "trading_dates": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "format": "date"}},
+    "sessions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["auction_start_at"],
+        "properties": {"auction_start_at": {"type": "string", "format": "date-time"}}
+      }
+    },
+    "source_uri": {"type": "string"},
+    "captured_at": {"type": "string", "format": "date-time"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"source_kind": {"const": "AUTHORITATIVE"}}},
+      "then": {"required": ["source_uri", "captured_at"]}
+    },
+    {
+      "if": {"properties": {"source_kind": {"const": "STRUCTURED_PROVIDER"}}},
+      "then": {"required": ["source_uri", "captured_at"]}
+    }
+  ]
+}

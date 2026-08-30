@@ -1,0 +1,2397 @@
+{
+ "scan_date": "2026-08-18",
+ "query_count": 12,
+ "sector_count": 120,
+ "sectors": [
+  {
+   "name": "高股息精选",
+   "chg_today": 0.245,
+   "chg_3d": 0.37035700000000005,
+   "chg_5d": 0.023408,
+   "chg_10d": -0.016944,
+   "chg_20d": 3.415491,
+   "main_flow": 21.671013,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "电子纸",
+   "chg_today": 1.1376000000000002,
+   "chg_3d": 3.507623,
+   "chg_5d": 4.0891020000000005,
+   "chg_10d": 8.876765,
+   "chg_20d": 13.705549,
+   "main_flow": 16.396699,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "跨境支付(CIPS)",
+   "chg_today": -0.3388,
+   "chg_3d": -0.688558,
+   "chg_5d": -1.8556860000000002,
+   "chg_10d": -1.531072,
+   "chg_20d": 6.323088,
+   "main_flow": 14.021944,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "智慧灯杆",
+   "chg_today": -0.6077,
+   "chg_3d": 2.403934,
+   "chg_5d": 2.617056,
+   "chg_10d": 6.515442,
+   "chg_20d": 14.092666000000001,
+   "main_flow": 13.977695,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "BC电池",
+   "chg_today": 0.8342999999999999,
+   "chg_3d": 5.578227,
+   "chg_5d": 5.411045,
+   "chg_10d": 11.903723,
+   "chg_20d": 15.608521999999999,
+   "main_flow": 12.452965,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.004302251506306422,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "MicroLED概念",
+   "chg_today": 1.1355,
+   "chg_3d": 5.710312,
+   "chg_5d": 6.06155,
+   "chg_10d": 13.643442,
+   "chg_20d": 11.697799999999999,
+   "main_flow": 11.086576,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.003050267336808772,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_5d"
+   ]
+  },
+  {
+   "name": "TOPCON电池",
+   "chg_today": 0.3733,
+   "chg_3d": 4.118435,
+   "chg_5d": 4.295946,
+   "chg_10d": 10.930358,
+   "chg_20d": 14.811232999999998,
+   "main_flow": 11.010416,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "民营医院",
+   "chg_today": -0.4703,
+   "chg_3d": 0.09299500000000001,
+   "chg_5d": 2.570178,
+   "chg_10d": 7.935048999999999,
+   "chg_20d": 16.194448,
+   "main_flow": 9.640001,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.012079702581303536,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "猪肉",
+   "chg_today": 2.8442,
+   "chg_3d": 2.9686649999999997,
+   "chg_5d": 3.5035289999999994,
+   "chg_10d": 6.742636,
+   "chg_20d": 9.594617,
+   "main_flow": 9.1303056,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "HJT电池",
+   "chg_today": 0.42960000000000004,
+   "chg_3d": 4.2050089999999996,
+   "chg_5d": 4.212035,
+   "chg_10d": 10.311863,
+   "chg_20d": 14.661697000000002,
+   "main_flow": 8.726832,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "农业种植",
+   "chg_today": 3.8799,
+   "chg_3d": 4.946971,
+   "chg_5d": 5.770618000000001,
+   "chg_10d": 8.122545,
+   "chg_20d": 15.118417,
+   "main_flow": 8.2645357,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0002245145383369522,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_5d",
+    "gain_20d",
+    "drawdown"
+   ]
+  },
+  {
+   "name": "煤化工概念",
+   "chg_today": 0.7594,
+   "chg_3d": 1.8727790000000002,
+   "chg_5d": 0.7770520000000001,
+   "chg_10d": 3.417477,
+   "chg_20d": 8.789834,
+   "main_flow": 8.141492,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "玉米",
+   "chg_today": 7.4739,
+   "chg_3d": 10.507751,
+   "chg_5d": 9.924961,
+   "chg_10d": 12.133846,
+   "chg_20d": 19.917512000000002,
+   "main_flow": 7.8386514,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 7.772413903132592e-05,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_5d",
+    "gain_20d",
+    "drawdown"
+   ]
+  },
+  {
+   "name": "粮食概念",
+   "chg_today": 6.518599999999999,
+   "chg_3d": 10.011169,
+   "chg_5d": 9.964048,
+   "chg_10d": 12.564846,
+   "chg_20d": 22.011727,
+   "main_flow": 7.2592532,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.00033985470347397493,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_5d",
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "转基因",
+   "chg_today": 9.3012,
+   "chg_3d": 13.098888,
+   "chg_5d": 12.737074000000002,
+   "chg_10d": 16.020667,
+   "chg_20d": 21.493321,
+   "main_flow": 6.8345697,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0005305424384522011,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_5d",
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "生态农业",
+   "chg_today": 2.8146,
+   "chg_3d": 4.295873,
+   "chg_5d": 4.407044,
+   "chg_10d": 6.6732059999999995,
+   "chg_20d": 14.028754,
+   "main_flow": 5.5795648,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0002267530499513707,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "drawdown"
+   ]
+  },
+  {
+   "name": "农村电商",
+   "chg_today": 2.0721,
+   "chg_3d": 3.138001,
+   "chg_5d": 2.741553,
+   "chg_10d": 3.560344,
+   "chg_20d": 11.582971,
+   "main_flow": 5.3784895,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.00021223101898799475,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "drawdown"
+   ]
+  },
+  {
+   "name": "页岩气",
+   "chg_today": 0.638,
+   "chg_3d": 2.515505,
+   "chg_5d": 1.05174,
+   "chg_10d": 3.302657,
+   "chg_20d": 10.429516,
+   "main_flow": 5.0037943,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "光伏建筑一体化",
+   "chg_today": -0.2523,
+   "chg_3d": 0.523681,
+   "chg_5d": 0.7400559999999999,
+   "chg_10d": 2.37968,
+   "chg_20d": 10.545774,
+   "main_flow": 4.480021,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "减速器",
+   "chg_today": 0.7358,
+   "chg_3d": 2.918667,
+   "chg_5d": 2.398158,
+   "chg_10d": 7.10837,
+   "chg_20d": 14.300700999999998,
+   "main_flow": 4.469182,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0001913251188271593,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "drawdown"
+   ]
+  },
+  {
+   "name": "预制菜",
+   "chg_today": 1.9709999999999999,
+   "chg_3d": 2.691879,
+   "chg_5d": 3.3163409999999995,
+   "chg_10d": 5.730427,
+   "chg_20d": 13.389954000000001,
+   "main_flow": 4.4328092,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "土地流转",
+   "chg_today": 3.295,
+   "chg_3d": 4.976387,
+   "chg_5d": 5.495019999999999,
+   "chg_10d": 8.460766,
+   "chg_20d": 17.667899000000002,
+   "main_flow": 3.9180011,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0006707889209115024,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "可降解塑料",
+   "chg_today": 0.2606,
+   "chg_3d": 2.699421,
+   "chg_5d": 2.244155,
+   "chg_10d": 6.294257,
+   "chg_20d": 12.394402,
+   "main_flow": 3.741287,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "新型烟草(电子烟)",
+   "chg_today": 0.3605,
+   "chg_3d": 3.981141,
+   "chg_5d": 4.344008,
+   "chg_10d": 12.604385,
+   "chg_20d": 15.57814,
+   "main_flow": 3.523247,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0032209954184710997,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "华为海思概念股",
+   "chg_today": 1.0115,
+   "chg_3d": 5.804543,
+   "chg_5d": 6.550487,
+   "chg_10d": 12.546774999999998,
+   "chg_20d": 11.080484,
+   "main_flow": 3.389992,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0012797865263789831,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_5d"
+   ]
+  },
+  {
+   "name": "大豆",
+   "chg_today": 6.4737,
+   "chg_3d": 10.016072,
+   "chg_5d": 9.762879,
+   "chg_10d": 12.120522000000001,
+   "chg_20d": 19.494737,
+   "main_flow": 3.1764934,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.004776555891095414,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_5d",
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "新型工业化",
+   "chg_today": 0.1048,
+   "chg_3d": 2.935594,
+   "chg_5d": 2.889992,
+   "chg_10d": 7.979909999999999,
+   "chg_20d": 14.172410999999999,
+   "main_flow": 2.907806,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "养鸡",
+   "chg_today": 1.8838000000000001,
+   "chg_3d": 2.358671,
+   "chg_5d": 1.805159,
+   "chg_10d": 5.7307,
+   "chg_20d": 9.066265,
+   "main_flow": 2.5915222,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "动物疫苗",
+   "chg_today": 2.7187,
+   "chg_3d": 3.413393,
+   "chg_5d": 4.08006,
+   "chg_10d": 8.878331000000001,
+   "chg_20d": 12.782089999999998,
+   "main_flow": 2.573062,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "化肥",
+   "chg_today": 2.1664,
+   "chg_3d": 4.235017,
+   "chg_5d": 2.622825,
+   "chg_10d": 5.229158,
+   "chg_20d": 12.160893999999999,
+   "main_flow": 2.484326,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "光刻胶",
+   "chg_today": 0.1503,
+   "chg_3d": 6.5086379999999995,
+   "chg_5d": 5.8547340000000005,
+   "chg_10d": 18.17607,
+   "chg_20d": 14.749232000000001,
+   "main_flow": 2.290424,
+   "main_3d": null,
+   "main_5d": 39.58114,
+   "main_10d": null,
+   "main_20d": 94.29646,
+   "drawdown": 0.007930533147848548,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in",
+    "gain_5d",
+    "main_20d"
+   ]
+  },
+  {
+   "name": "长安汽车概念",
+   "chg_today": -0.0849,
+   "chg_3d": 1.905545,
+   "chg_5d": 1.8466010000000002,
+   "chg_10d": 5.277628,
+   "chg_20d": 11.673275,
+   "main_flow": 2.2681,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "POE胶膜",
+   "chg_today": -0.11230000000000001,
+   "chg_3d": 2.8230180000000002,
+   "chg_5d": 2.136954,
+   "chg_10d": 6.432452,
+   "chg_20d": 13.025568000000002,
+   "main_flow": 2.2299825,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "海南自贸区",
+   "chg_today": 1.438,
+   "chg_3d": 2.639189,
+   "chg_5d": 2.1798100000000002,
+   "chg_10d": 4.728765,
+   "chg_20d": 13.920287,
+   "main_flow": 2.213678,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "可燃冰",
+   "chg_today": 2.0211,
+   "chg_3d": 4.374338,
+   "chg_5d": 1.617244,
+   "chg_10d": 3.4283969999999995,
+   "chg_20d": 11.126990000000001,
+   "main_flow": 2.0844295,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "天然气",
+   "chg_today": 0.48529999999999995,
+   "chg_3d": 2.0046370000000002,
+   "chg_5d": 1.149696,
+   "chg_10d": 3.6958919999999997,
+   "chg_20d": 9.595782,
+   "main_flow": 1.874659,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "供销社",
+   "chg_today": 1.5689000000000002,
+   "chg_3d": 4.35759,
+   "chg_5d": 2.936724,
+   "chg_10d": 4.764969,
+   "chg_20d": 10.297381,
+   "main_flow": 1.5681515,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "NMN概念",
+   "chg_today": 1.2656,
+   "chg_3d": 1.513544,
+   "chg_5d": 2.708647,
+   "chg_10d": 5.957724,
+   "chg_20d": 11.311345000000001,
+   "main_flow": 1.451499,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "中韩自贸区",
+   "chg_today": 0.468,
+   "chg_3d": 1.290284,
+   "chg_5d": -0.11171099999999999,
+   "chg_10d": 2.647613,
+   "chg_20d": 9.594028999999999,
+   "main_flow": 1.4438293,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "ERP概念",
+   "chg_today": 0.1647,
+   "chg_3d": -0.020722,
+   "chg_5d": -0.138656,
+   "chg_10d": 1.3631090000000001,
+   "chg_20d": 12.984290000000001,
+   "main_flow": 1.4129597,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_in"
+   ]
+  },
+  {
+   "name": "芯片概念",
+   "chg_today": 0.0164,
+   "chg_3d": 4.95857,
+   "chg_5d": 5.297102,
+   "chg_10d": 13.376291000000002,
+   "chg_20d": 12.650613,
+   "main_flow": -371.46258,
+   "main_3d": 285.80348,
+   "main_5d": 420.82897,
+   "main_10d": 520.95285,
+   "main_20d": 526.86501,
+   "drawdown": null,
+   "vol_ratio": 1.153,
+   "amount": 10763.9116,
+   "sources": [
+    "main_out",
+    "turnover",
+    "main_20d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "2026中报预增",
+   "chg_today": -0.3681,
+   "chg_3d": 2.9109659999999997,
+   "chg_5d": 2.841061,
+   "chg_10d": 9.647828,
+   "chg_20d": 11.732656,
+   "main_flow": -305.60242,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 1.035,
+   "amount": 6790.7025,
+   "sources": [
+    "main_out",
+    "turnover"
+   ]
+  },
+  {
+   "name": "数据中心(AIDC)",
+   "chg_today": -0.6018,
+   "chg_3d": 2.399225,
+   "chg_5d": 3.1451800000000003,
+   "chg_10d": 7.1166469999999995,
+   "chg_20d": 12.263596999999999,
+   "main_flow": -298.72951,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 0.993,
+   "amount": 6439.0002,
+   "sources": [
+    "main_out",
+    "turnover"
+   ]
+  },
+  {
+   "name": "5G",
+   "chg_today": -0.46299999999999997,
+   "chg_3d": 3.851225,
+   "chg_5d": 4.595078,
+   "chg_10d": 11.354772,
+   "chg_20d": 13.841403,
+   "main_flow": -279.37276,
+   "main_3d": 8.57888,
+   "main_5d": 135.9083,
+   "main_10d": 164.70552,
+   "main_20d": 79.94697,
+   "drawdown": null,
+   "vol_ratio": 1.027,
+   "amount": 5444.5272,
+   "sources": [
+    "main_out",
+    "turnover",
+    "main_20d",
+    "main_10d"
+   ]
+  },
+  {
+   "name": "华为概念",
+   "chg_today": -0.517,
+   "chg_3d": 1.9545759999999999,
+   "chg_5d": 2.279878,
+   "chg_10d": 6.451448999999999,
+   "chg_20d": 12.197963000000001,
+   "main_flow": -251.11869,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 1.018,
+   "amount": 6864.301,
+   "sources": [
+    "main_out",
+    "turnover"
+   ]
+  },
+  {
+   "name": "共封装光学(CPO)",
+   "chg_today": -0.0798,
+   "chg_3d": 7.207648999999999,
+   "chg_5d": 9.336181,
+   "chg_10d": 19.517263,
+   "chg_20d": 15.614584,
+   "main_flow": -205.82063,
+   "main_3d": 125.87253,
+   "main_5d": 302.7103,
+   "main_10d": 329.20953,
+   "main_20d": null,
+   "drawdown": 0.01246117718970408,
+   "vol_ratio": 1.3,
+   "amount": 4885.7207,
+   "sources": [
+    "main_out",
+    "turnover",
+    "gain_5d",
+    "gain_20d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "消费电子概念",
+   "chg_today": -0.10540000000000001,
+   "chg_3d": 4.455241,
+   "chg_5d": 4.598725,
+   "chg_10d": 12.310347,
+   "chg_20d": 13.069086999999998,
+   "main_flow": -191.28093,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 1.067,
+   "amount": 4289.5886,
+   "sources": [
+    "main_out",
+    "turnover"
+   ]
+  },
+  {
+   "name": "人工智能",
+   "chg_today": -0.6279,
+   "chg_3d": 0.7365670000000001,
+   "chg_5d": 0.9111440000000001,
+   "chg_10d": 3.931843,
+   "chg_20d": 11.785043,
+   "main_flow": -190.47456,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 0.974,
+   "amount": 4905.0265,
+   "sources": [
+    "main_out",
+    "turnover"
+   ]
+  },
+  {
+   "name": "人民币贬值受益",
+   "chg_today": -0.0034999999999999996,
+   "chg_3d": 2.3472280000000003,
+   "chg_5d": 2.544476,
+   "chg_10d": 7.0608509999999995,
+   "chg_20d": 12.468712,
+   "main_flow": -184.76866,
+   "main_3d": 183.79267,
+   "main_5d": 251.42625,
+   "main_10d": 243.64426,
+   "main_20d": 596.60554,
+   "drawdown": null,
+   "vol_ratio": 1.027,
+   "amount": 4355.3593,
+   "sources": [
+    "main_out",
+    "turnover",
+    "main_20d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "汽车电子",
+   "chg_today": 0.0451,
+   "chg_3d": 4.407762,
+   "chg_5d": 4.759936,
+   "chg_10d": 11.73602,
+   "chg_20d": 13.39724,
+   "main_flow": -181.38944,
+   "main_3d": 69.98553,
+   "main_5d": 110.2596,
+   "main_10d": 108.35676,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 1.133,
+   "amount": 4121.8629,
+   "sources": [
+    "main_out",
+    "turnover",
+    "main_10d"
+   ]
+  },
+  {
+   "name": "东数西算(算力)",
+   "chg_today": -1.0071999999999999,
+   "chg_3d": 1.489929,
+   "chg_5d": 2.3253909999999998,
+   "chg_10d": 5.751059,
+   "chg_20d": 12.254665,
+   "main_flow": -171.93106,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 0.954,
+   "amount": 3632.0615,
+   "sources": [
+    "main_out",
+    "turnover"
+   ]
+  },
+  {
+   "name": "液冷服务器",
+   "chg_today": -0.5692,
+   "chg_3d": 3.947163,
+   "chg_5d": 4.9619290000000005,
+   "chg_10d": 11.016975,
+   "chg_20d": 12.106565,
+   "main_flow": -166.8647,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_out"
+   ]
+  },
+  {
+   "name": "DeepSeek概念",
+   "chg_today": -0.5122,
+   "chg_3d": 0.5537000000000001,
+   "chg_5d": 0.656716,
+   "chg_10d": 2.832714,
+   "chg_20d": 10.639794,
+   "main_flow": -163.53306,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_out"
+   ]
+  },
+  {
+   "name": "新能源汽车",
+   "chg_today": 0.0201,
+   "chg_3d": 3.042514,
+   "chg_5d": 3.023637,
+   "chg_10d": 8.122116,
+   "chg_20d": 13.250744000000001,
+   "main_flow": -161.917,
+   "main_3d": 105.47931,
+   "main_5d": 131.72191,
+   "main_10d": 170.9647,
+   "main_20d": 167.76513,
+   "drawdown": null,
+   "vol_ratio": 1.096,
+   "amount": 5846.957,
+   "sources": [
+    "main_out",
+    "turnover",
+    "main_20d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "机器人概念",
+   "chg_today": 0.055400000000000005,
+   "chg_3d": 2.601485,
+   "chg_5d": 2.5149660000000003,
+   "chg_10d": 6.906105,
+   "chg_20d": 12.558984,
+   "main_flow": -160.24892,
+   "main_3d": 87.20587,
+   "main_5d": -10.12367,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 1.135,
+   "amount": 6272.5368,
+   "sources": [
+    "main_out",
+    "turnover",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "存储芯片",
+   "chg_today": 0.22490000000000002,
+   "chg_3d": 7.287113000000001,
+   "chg_5d": 7.690557000000001,
+   "chg_10d": 20.387491,
+   "chg_20d": 10.508388,
+   "main_flow": -153.61003,
+   "main_3d": 172.90088,
+   "main_5d": 208.0974,
+   "main_10d": 281.07976,
+   "main_20d": 548.49461,
+   "drawdown": 0.011228639792734744,
+   "vol_ratio": 1.115,
+   "amount": 4424.5439,
+   "sources": [
+    "main_out",
+    "turnover",
+    "gain_5d",
+    "main_20d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "储能",
+   "chg_today": -0.2864,
+   "chg_3d": 1.962892,
+   "chg_5d": 2.0748659999999997,
+   "chg_10d": 5.808474,
+   "chg_20d": 11.924382,
+   "main_flow": -145.76351,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 1.02,
+   "amount": 4545.5559,
+   "sources": [
+    "main_out",
+    "turnover"
+   ]
+  },
+  {
+   "name": "锂电池概念",
+   "chg_today": -0.3835,
+   "chg_3d": 2.716422,
+   "chg_5d": 2.180344,
+   "chg_10d": 7.543853,
+   "chg_20d": 13.171288,
+   "main_flow": -144.85812,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 0.99,
+   "amount": 3826.45,
+   "sources": [
+    "main_out",
+    "turnover"
+   ]
+  },
+  {
+   "name": "物联网",
+   "chg_today": -0.2906,
+   "chg_3d": 2.094272,
+   "chg_5d": 2.170418,
+   "chg_10d": 5.664861999999999,
+   "chg_20d": 12.748489,
+   "main_flow": -143.17646,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_out"
+   ]
+  },
+  {
+   "name": "阿里巴巴概念",
+   "chg_today": -1.0599,
+   "chg_3d": -0.021449,
+   "chg_5d": 0.010335,
+   "chg_10d": 2.215418,
+   "chg_20d": 10.069994,
+   "main_flow": -133.12089,
+   "main_3d": null,
+   "main_5d": 4.50527,
+   "main_10d": null,
+   "main_20d": 423.78393,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_out",
+    "main_20d"
+   ]
+  },
+  {
+   "name": "腾讯概念",
+   "chg_today": -1.3837,
+   "chg_3d": -0.44872,
+   "chg_5d": -0.07490100000000001,
+   "chg_10d": 1.575951,
+   "chg_20d": 10.010624,
+   "main_flow": -125.29168,
+   "main_3d": null,
+   "main_5d": -16.26266,
+   "main_10d": null,
+   "main_20d": 413.122584,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_out",
+    "main_20d"
+   ]
+  },
+  {
+   "name": "专精特新",
+   "chg_today": 0.1302,
+   "chg_3d": null,
+   "chg_5d": 3.6645570000000003,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 173.97246,
+   "main_5d": 226.22134,
+   "main_10d": 385.92333,
+   "main_20d": 465.0793,
+   "drawdown": null,
+   "vol_ratio": 1.007,
+   "amount": 4696.8733,
+   "sources": [
+    "turnover",
+    "main_20d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "光伏概念",
+   "chg_today": -0.0107,
+   "chg_3d": null,
+   "chg_5d": 2.9682299999999997,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 122.69929,
+   "main_5d": 67.65072,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 1.145,
+   "amount": 4022.3065,
+   "sources": [
+    "turnover",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "比亚迪概念",
+   "chg_today": 0.0145,
+   "chg_3d": null,
+   "chg_5d": 3.42453,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 78.92567,
+   "main_5d": 59.98663,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": 1.071,
+   "amount": 3926.759,
+   "sources": [
+    "turnover",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "先进封装",
+   "chg_today": 0.46340000000000003,
+   "chg_3d": 7.254414,
+   "chg_5d": 7.742589,
+   "chg_10d": null,
+   "chg_20d": 11.874519,
+   "main_flow": null,
+   "main_3d": 176.34074,
+   "main_5d": 211.14072,
+   "main_10d": 309.42282,
+   "main_20d": 131.27825,
+   "drawdown": 0.009417779743476405,
+   "vol_ratio": 1.431,
+   "amount": 3658.2613,
+   "sources": [
+    "turnover",
+    "gain_5d",
+    "main_20d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "小米概念",
+   "chg_today": -0.1856,
+   "chg_3d": null,
+   "chg_5d": 3.359674,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 77.71546,
+   "main_5d": 55.44575,
+   "main_10d": null,
+   "main_20d": 306.18132,
+   "drawdown": null,
+   "vol_ratio": 1.153,
+   "amount": 3560.2811,
+   "sources": [
+    "turnover",
+    "main_20d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "F5G概念",
+   "chg_today": -0.9624,
+   "chg_3d": 5.361607,
+   "chg_5d": 8.744673,
+   "chg_10d": null,
+   "chg_20d": 13.080838,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.011479948303730347,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d"
+   ]
+  },
+  {
+   "name": "同花顺果指数",
+   "chg_today": 0.8631,
+   "chg_3d": 7.901223,
+   "chg_5d": 8.434659,
+   "chg_10d": null,
+   "chg_20d": 7.942651000000001,
+   "main_flow": null,
+   "main_3d": 43.316643,
+   "main_5d": 46.103773,
+   "main_10d": 98.470129,
+   "main_20d": null,
+   "drawdown": 0.006539294180921931,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "main_10d"
+   ]
+  },
+  {
+   "name": "光纤概念",
+   "chg_today": -0.0301,
+   "chg_3d": 6.197235,
+   "chg_5d": 8.277149999999999,
+   "chg_10d": 16.698382000000002,
+   "chg_20d": 16.284486,
+   "main_flow": null,
+   "main_3d": 97.80838,
+   "main_5d": 177.12077,
+   "main_10d": 158.54585,
+   "main_20d": 74.732816,
+   "drawdown": 0.009760574498278933,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "gain_20d",
+    "main_20d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "玻璃基板",
+   "chg_today": 1.1775,
+   "chg_3d": 7.690614,
+   "chg_5d": 7.877299,
+   "chg_10d": null,
+   "chg_20d": 10.762017,
+   "main_flow": null,
+   "main_3d": 84.595865,
+   "main_5d": 103.661342,
+   "main_10d": 123.783562,
+   "main_20d": null,
+   "drawdown": 0.007938553315898574,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "科创次新股",
+   "chg_today": 0.39509999999999995,
+   "chg_3d": 5.665741,
+   "chg_5d": 7.3048779999999995,
+   "chg_10d": null,
+   "chg_20d": 2.855484,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": 103.142595,
+   "main_10d": null,
+   "main_20d": 550.872463,
+   "drawdown": 0.011744731902812135,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "main_20d"
+   ]
+  },
+  {
+   "name": "光刻机",
+   "chg_today": 0.4299,
+   "chg_3d": 7.059516,
+   "chg_5d": 7.2277499999999995,
+   "chg_10d": 20.499933000000002,
+   "chg_20d": 15.357171,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.007955662145723533,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "富士康概念",
+   "chg_today": 0.4811,
+   "chg_3d": 6.540047,
+   "chg_5d": 7.14419,
+   "chg_10d": 17.966939,
+   "chg_20d": 16.788883,
+   "main_flow": null,
+   "main_3d": 8.309013,
+   "main_5d": 5.482956,
+   "main_10d": 126.015343,
+   "main_20d": 135.775589,
+   "drawdown": 0.0045085171811241895,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "gain_20d",
+    "main_20d",
+    "main_10d"
+   ]
+  },
+  {
+   "name": "第三代半导体",
+   "chg_today": 0.6429,
+   "chg_3d": 6.131302000000001,
+   "chg_5d": 6.9374080000000005,
+   "chg_10d": null,
+   "chg_20d": 13.423655,
+   "main_flow": null,
+   "main_3d": 74.912994,
+   "main_5d": 102.833889,
+   "main_10d": 157.817009,
+   "main_20d": null,
+   "drawdown": 0.007034573883705919,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "铜缆高速连接",
+   "chg_today": -0.5262,
+   "chg_3d": 5.588063,
+   "chg_5d": 6.936107,
+   "chg_10d": null,
+   "chg_20d": 13.321126,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.007531521725045046,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d"
+   ]
+  },
+  {
+   "name": "中芯国际概念",
+   "chg_today": 0.0791,
+   "chg_3d": 6.715819000000001,
+   "chg_5d": 6.428763,
+   "chg_10d": null,
+   "chg_20d": 9.845454,
+   "main_flow": null,
+   "main_3d": 55.449849,
+   "main_5d": 57.675691,
+   "main_10d": 156.015281,
+   "main_20d": 126.202789,
+   "drawdown": 0.012115816100103226,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "main_20d",
+    "main_10d"
+   ]
+  },
+  {
+   "name": "国家大基金持股",
+   "chg_today": 0.0161,
+   "chg_3d": 6.898338,
+   "chg_5d": 6.278568,
+   "chg_10d": null,
+   "chg_20d": 6.176534,
+   "main_flow": null,
+   "main_3d": 101.977433,
+   "main_5d": 97.738273,
+   "main_10d": 139.180483,
+   "main_20d": 568.618743,
+   "drawdown": 0.012060826941790071,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "main_20d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "PCB概念",
+   "chg_today": -0.2303,
+   "chg_3d": 5.893806,
+   "chg_5d": 6.173411,
+   "chg_10d": null,
+   "chg_20d": 14.988926,
+   "main_flow": null,
+   "main_3d": 31.18777,
+   "main_5d": 43.22779,
+   "main_10d": 97.26111,
+   "main_20d": null,
+   "drawdown": 0.011292986507147417,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "main_10d"
+   ]
+  },
+  {
+   "name": "PET铜箔",
+   "chg_today": -0.21789999999999998,
+   "chg_3d": 5.493215,
+   "chg_5d": 6.143413000000001,
+   "chg_10d": 19.548661,
+   "chg_20d": 16.291626,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.013295720055269142,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "PM2.5",
+   "chg_today": -0.6997,
+   "chg_3d": 3.6987069999999997,
+   "chg_5d": 5.951837,
+   "chg_10d": 11.905135999999999,
+   "chg_20d": 18.738255000000002,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.008468141782461316,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "苹果概念",
+   "chg_today": 0.441,
+   "chg_3d": 5.64795,
+   "chg_5d": 5.908157,
+   "chg_10d": null,
+   "chg_20d": 13.823358999999998,
+   "main_flow": null,
+   "main_3d": 70.997763,
+   "main_5d": 82.661176,
+   "main_10d": 138.378176,
+   "main_20d": null,
+   "drawdown": 0.004496450122676708,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "OLED",
+   "chg_today": 0.2114,
+   "chg_3d": 5.402400999999999,
+   "chg_5d": 5.901955,
+   "chg_10d": null,
+   "chg_20d": 12.247705999999999,
+   "main_flow": null,
+   "main_3d": 87.22301,
+   "main_5d": 82.26263,
+   "main_10d": 130.72527,
+   "main_20d": null,
+   "drawdown": 0.007785958503667261,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "AI PC",
+   "chg_today": 0.5035000000000001,
+   "chg_3d": 5.227985,
+   "chg_5d": 5.886256,
+   "chg_10d": null,
+   "chg_20d": 9.653436,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0026776887547990303,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d"
+   ]
+  },
+  {
+   "name": "MiniLED",
+   "chg_today": 0.2073,
+   "chg_3d": 5.362502,
+   "chg_5d": 5.731261,
+   "chg_10d": null,
+   "chg_20d": 11.668605,
+   "main_flow": null,
+   "main_3d": 36.1627,
+   "main_5d": 84.851455,
+   "main_10d": 112.418646,
+   "main_20d": null,
+   "drawdown": 0.00844290455554681,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d",
+    "main_10d"
+   ]
+  },
+  {
+   "name": "培育钻石",
+   "chg_today": 0.5942000000000001,
+   "chg_3d": 6.41028,
+   "chg_5d": 5.713072,
+   "chg_10d": null,
+   "chg_20d": 9.801313,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0037669657937042154,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_5d"
+   ]
+  },
+  {
+   "name": "摘帽",
+   "chg_today": 0.0993,
+   "chg_3d": null,
+   "chg_5d": 2.040612,
+   "chg_10d": 6.723141000000001,
+   "chg_20d": 21.228765,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0061073188239318945,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "乳业",
+   "chg_today": 2.3784,
+   "chg_3d": null,
+   "chg_5d": 5.153276,
+   "chg_10d": 9.285468,
+   "chg_20d": 20.087885,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0032555529675820424,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "CRO概念",
+   "chg_today": -1.388,
+   "chg_3d": null,
+   "chg_5d": 3.072894,
+   "chg_10d": 17.010862,
+   "chg_20d": 20.074285,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": 12.815437,
+   "main_10d": null,
+   "main_20d": 78.5846625,
+   "drawdown": 0.02317224088633727,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d",
+    "main_20d"
+   ]
+  },
+  {
+   "name": "金属锌",
+   "chg_today": -0.6910000000000001,
+   "chg_3d": null,
+   "chg_5d": -0.34254300000000004,
+   "chg_10d": 7.517988000000001,
+   "chg_20d": 19.612859999999998,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.04456567779991521,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "金属铅",
+   "chg_today": -0.5565,
+   "chg_3d": null,
+   "chg_5d": -0.017320000000000002,
+   "chg_10d": 8.082211000000001,
+   "chg_20d": 19.401284,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": -42.739757,
+   "main_10d": null,
+   "main_20d": 86.3207392,
+   "drawdown": 0.04487508051719534,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d",
+    "main_20d"
+   ]
+  },
+  {
+   "name": "举牌",
+   "chg_today": -0.1036,
+   "chg_3d": null,
+   "chg_5d": 3.160413,
+   "chg_10d": 5.918491,
+   "chg_20d": 17.278615,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.004072127237945486,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "丙烯酸",
+   "chg_today": -0.5078,
+   "chg_3d": null,
+   "chg_5d": 2.012477,
+   "chg_10d": 6.327176,
+   "chg_20d": 16.982986999999998,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.006453960912782835,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "兵装重组概念",
+   "chg_today": -1.8252000000000002,
+   "chg_3d": null,
+   "chg_5d": -3.1812840000000002,
+   "chg_10d": 0.046753,
+   "chg_20d": 16.23208,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.05368101544316987,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "黑龙江自贸区",
+   "chg_today": 0.1407,
+   "chg_3d": null,
+   "chg_5d": 2.352559,
+   "chg_10d": 6.878239,
+   "chg_20d": 15.837541,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.001969361095716946,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "建筑节能",
+   "chg_today": 0.2916,
+   "chg_3d": null,
+   "chg_5d": 1.8026710000000001,
+   "chg_10d": 4.793822,
+   "chg_20d": 15.751467,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.00015731804201966852,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d",
+    "drawdown"
+   ]
+  },
+  {
+   "name": "人造肉",
+   "chg_today": 2.4982,
+   "chg_3d": null,
+   "chg_5d": 3.9742439999999997,
+   "chg_10d": 7.986912,
+   "chg_20d": 15.733644,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0003395399361511268,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "工业母机",
+   "chg_today": 0.3975,
+   "chg_3d": null,
+   "chg_5d": 3.2624269999999997,
+   "chg_10d": 10.825846,
+   "chg_20d": 15.716352,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0014637382576218481,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "细胞免疫治疗",
+   "chg_today": -1.4484000000000001,
+   "chg_3d": null,
+   "chg_5d": 1.574099,
+   "chg_10d": 12.698485000000002,
+   "chg_20d": 15.123313999999999,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.024750764803984374,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "黄金概念",
+   "chg_today": -0.626,
+   "chg_3d": null,
+   "chg_5d": -0.213527,
+   "chg_10d": 6.937609,
+   "chg_20d": 15.052561,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": -66.724786,
+   "main_10d": null,
+   "main_20d": 101.066468,
+   "drawdown": 0.03734759950229077,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d",
+    "main_20d"
+   ]
+  },
+  {
+   "name": "职业教育",
+   "chg_today": -0.3074,
+   "chg_3d": null,
+   "chg_5d": 0.738621,
+   "chg_10d": 2.643259,
+   "chg_20d": 15.042063,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.018809540898988245,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "gain_20d"
+   ]
+  },
+  {
+   "name": "注册制次新股",
+   "chg_today": -0.0904,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": 90.119269,
+   "main_10d": null,
+   "main_20d": 544.01427,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_20d"
+   ]
+  },
+  {
+   "name": "新股与次新股",
+   "chg_today": 0.5694,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": 90.119269,
+   "main_10d": null,
+   "main_20d": 544.01427,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_20d"
+   ]
+  },
+  {
+   "name": "抖音概念(字节概念)",
+   "chg_today": -1.2585000000000002,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": 35.874483,
+   "main_10d": null,
+   "main_20d": 419.045269,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_20d"
+   ]
+  },
+  {
+   "name": "同花顺新质50",
+   "chg_today": -0.034,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 106.418961,
+   "main_5d": 187.83773,
+   "main_10d": 217.42898,
+   "main_20d": 308.41746,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_20d",
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "宁德时代概念",
+   "chg_today": -0.3613,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": 41.933112,
+   "main_10d": null,
+   "main_20d": 178.759815,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_20d"
+   ]
+  },
+  {
+   "name": "同花顺出海50",
+   "chg_today": 0.5640000000000001,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": -33.400771,
+   "main_10d": null,
+   "main_20d": 160.744082,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_20d"
+   ]
+  },
+  {
+   "name": "特斯拉概念",
+   "chg_today": 0.187,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 63.598751,
+   "main_5d": 81.252235,
+   "main_10d": 98.495225,
+   "main_20d": 129.452251,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_20d",
+    "main_10d"
+   ]
+  },
+  {
+   "name": "金属铜",
+   "chg_today": -0.8237,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": -58.640306,
+   "main_10d": null,
+   "main_20d": 109.305898,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_20d"
+   ]
+  },
+  {
+   "name": "华为汽车",
+   "chg_today": 0.1308,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": 26.580152,
+   "main_10d": null,
+   "main_20d": 77.331265,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_20d"
+   ]
+  },
+  {
+   "name": "汽车芯片",
+   "chg_today": -0.2777,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 81.38216,
+   "main_5d": 90.74817,
+   "main_10d": 138.93696,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "海峡两岸",
+   "chg_today": 0.029300000000000003,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 22.203379,
+   "main_5d": 10.496319,
+   "main_10d": 97.574379,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_10d"
+   ]
+  },
+  {
+   "name": "传感器",
+   "chg_today": -0.0028,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 97.931355,
+   "main_5d": 65.79849,
+   "main_10d": 90.468949,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_10d",
+    "main_3d"
+   ]
+  },
+  {
+   "name": "人形机器人",
+   "chg_today": 0.4925,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 80.90765,
+   "main_5d": 40.44094,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_3d"
+   ]
+  },
+  {
+   "name": "无人驾驶",
+   "chg_today": -0.025599999999999998,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 74.61523,
+   "main_5d": 136.05087,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_3d"
+   ]
+  },
+  {
+   "name": "智能穿戴",
+   "chg_today": -0.0991,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 74.43895,
+   "main_5d": 41.32999,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_3d"
+   ]
+  },
+  {
+   "name": "AI眼镜",
+   "chg_today": -0.1626,
+   "chg_3d": null,
+   "chg_5d": null,
+   "chg_10d": null,
+   "chg_20d": null,
+   "main_flow": null,
+   "main_3d": 71.12663,
+   "main_5d": 32.38722,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": null,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "main_3d"
+   ]
+  },
+  {
+   "name": "长三角一体化",
+   "chg_today": 0.2718,
+   "chg_3d": null,
+   "chg_5d": 2.363884,
+   "chg_10d": 6.7071439999999996,
+   "chg_20d": 13.550939000000001,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.0,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "drawdown"
+   ]
+  },
+  {
+   "name": "冷链物流",
+   "chg_today": 0.5198999999999999,
+   "chg_3d": null,
+   "chg_5d": 2.264835,
+   "chg_10d": 5.5013890000000005,
+   "chg_20d": 12.580971,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.00016151930629126812,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "drawdown"
+   ]
+  },
+  {
+   "name": "草甘膦",
+   "chg_today": 2.4403,
+   "chg_3d": null,
+   "chg_5d": 3.40579,
+   "chg_10d": 3.9113830000000003,
+   "chg_20d": 11.121117,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.00021032452039117854,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "drawdown"
+   ]
+  },
+  {
+   "name": "共同富裕示范区",
+   "chg_today": 0.15330000000000002,
+   "chg_3d": null,
+   "chg_5d": 1.7969410000000001,
+   "chg_10d": 5.259284999999999,
+   "chg_20d": 13.098719000000001,
+   "main_flow": null,
+   "main_3d": null,
+   "main_5d": null,
+   "main_10d": null,
+   "main_20d": null,
+   "drawdown": 0.00027979667216004373,
+   "vol_ratio": null,
+   "amount": null,
+   "sources": [
+    "drawdown"
+   ]
+  }
+ ],
+ "errors": []
+}

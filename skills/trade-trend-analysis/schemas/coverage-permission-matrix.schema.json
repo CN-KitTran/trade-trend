@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:coverage-permission-matrix:v3.0-draft-1",
+  "type": "object",
+  "required": ["matrix_version", "entries"],
+  "properties": {
+    "matrix_version": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "entries": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["subject_scope", "field_or_window", "coverage_type", "data_health", "permission_effect", "allowed_sensing_signals", "allowed_opportunity_stages", "allowed_risk_levels", "stock_selection_allowed", "reason_code"]}}
+  }
+}

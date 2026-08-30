@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:theme-registry:v3.0-draft-1",
+  "type": "object",
+  "required": ["registry_version", "snapshot_hash", "effective_as_of", "themes", "excluded_source_sector_ids"],
+  "properties": {
+    "registry_version": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "snapshot_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "effective_as_of": {"type": "string", "format": "date"},
+    "themes": {"type": "array"},
+    "excluded_source_sector_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+  }
+}

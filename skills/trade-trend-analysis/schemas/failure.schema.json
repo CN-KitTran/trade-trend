@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:failure:v3.0-draft-1",
+  "type": "object",
+  "required": ["artifact_kind", "schema_version", "schema_ref", "producer_version", "created_at", "artifact_hash", "session", "release_mode", "publication_status", "reason_codes"],
+  "properties": {
+    "publication_status": {"const": "FAILED"},
+    "reason_codes": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  }
+}

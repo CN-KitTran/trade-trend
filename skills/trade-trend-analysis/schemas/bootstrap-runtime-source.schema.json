@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:bootstrap-runtime-source:v1",
+  "type": "object",
+  "required": ["source_kind", "source_name", "source_version", "timezone", "official_run_window", "information_cutoff_at", "auction_start_at"],
+  "properties": {
+    "source_kind": {"enum": ["USER_EXPLICIT", "DEPLOYMENT_CONFIG"]},
+    "source_name": {"type": "string", "minLength": 1},
+    "source_version": {"type": "string", "minLength": 1},
+    "timezone": {"const": "Asia/Shanghai"},
+    "official_run_window": {
+      "type": "object",
+      "required": ["start_at", "end_at"],
+      "properties": {
+        "start_at": {"type": "string", "format": "time"},
+        "end_at": {"type": "string", "format": "time"}
+      }
+    },
+    "information_cutoff_at": {"type": "string", "format": "time"},
+    "auction_start_at": {"type": "string", "format": "time"}
+  }
+}

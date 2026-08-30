@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:close-freeze-manifest:v3.0-draft-1",
+  "type": "object",
+  "required": ["artifact_kind", "schema_version", "schema_ref", "producer_version", "created_at", "artifact_hash", "session", "release_mode", "close_freeze_status", "market_data_as_of", "market_data_captured_at", "next_decision_date", "next_auction_start_at", "trading_calendar_ref", "theme_registry_ref", "coverage_permission_matrix_ref", "market_frame_ref", "identity_frame_ref", "observations_ref", "reason_codes"],
+  "properties": {
+    "artifact_kind": {"const": "close_freeze_manifest"},
+    "session": {"const": "CLOSE_FREEZE"},
+    "release_mode": {"enum": ["INTERNAL_GATE", "SHADOW", "OFFICIAL"]},
+    "close_freeze_status": {"const": "PASS"},
+    "reason_codes": {"type": "array", "maxItems": 0}
+  }
+}

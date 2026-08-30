@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:runtime-config:v3.0-draft-1",
+  "type": "object",
+  "required": ["config_version", "timezone", "official_run_window", "information_cutoff_at", "auction_start_at"],
+  "properties": {
+    "config_version": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "timezone": {"const": "Asia/Shanghai"},
+    "official_run_window": {"type": "object", "required": ["start_at", "end_at"]},
+    "information_cutoff_at": {"type": "string"},
+    "auction_start_at": {"type": "string"}
+  }
+}

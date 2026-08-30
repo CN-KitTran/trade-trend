@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:evidence:v3.0-draft-1",
+  "type": "object",
+  "required": ["artifact_kind", "schema_version", "schema_ref", "producer_version", "created_at", "artifact_hash", "information_cutoff", "evidence_plan_hash", "evidence_items", "case_coverage"],
+  "properties": {
+    "artifact_kind": {"const": "evidence"},
+    "information_cutoff": {"type": "string", "format": "date-time"},
+    "evidence_plan_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "evidence_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["evidence_id", "source_uri", "source_tier", "published_at", "captured_at", "content_hash", "fact", "trust_boundary"],
+        "properties": {"trust_boundary": {"const": "EXTERNAL_UNTRUSTED_CONTENT_ISOLATED"}}
+      }
+    },
+    "case_coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["case_id", "theme_id", "axis", "status", "evidence_refs", "search_scope", "source_uris", "search_completed_at", "limitations"],
+        "properties": {
+          "case_id": {"type": "string", "minLength": 1},
+          "theme_id": {"type": "string", "minLength": 1},
+          "axis": {"enum": ["OPPORTUNITY", "RISK"]},
+          "status": {"enum": ["EVIDENCE_FOUND", "NO_NEW_DIRECT_FACT_FOUND"]},
+          "evidence_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+          "search_scope": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "source_uris": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+          "search_completed_at": {"type": "string", "format": "date-time"},
+          "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}}
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"status": {"const": "EVIDENCE_FOUND"}}, "required": ["status"]},
+            "then": {"properties": {"evidence_refs": {"minItems": 1}}}
+          },
+          {
+            "if": {"properties": {"status": {"const": "NO_NEW_DIRECT_FACT_FOUND"}}, "required": ["status"]},
+            "then": {
+              "properties": {
+                "evidence_refs": {"maxItems": 0},
+                "limitations": {"minItems": 1}
+              }
+            }
+          }
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

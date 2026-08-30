@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:concept-decisions:v1",
+  "type": "object",
+  "required": ["decision_version", "decision_kind", "review_status", "reviewed_by", "reviewed_at", "review_packet_ref", "market_date", "catalog_version", "decision_count", "decisions", "source_input_ref"],
+  "properties": {
+    "decision_version": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "decision_kind": {"const": "SOURCE_FIRST_CONCEPT_DECISIONS_V1"},
+    "review_status": {"const": "REVIEWED"},
+    "reviewed_by": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "format": "date-time"},
+    "review_packet_ref": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "market_date": {"type": "string", "format": "date"},
+    "catalog_version": {"type": "string", "minLength": 1},
+    "decision_count": {"type": "integer", "minimum": 0},
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_sector_id", "status", "reason", "reason_codes"],
+        "properties": {
+          "source_sector_id": {"type": "string", "minLength": 1},
+          "status": {"enum": ["STABLE", "EXCLUDED", "PROVISIONAL"]},
+          "reason": {"type": "string", "minLength": 1},
+          "reason_codes": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+        }
+      }
+    },
+    "source_input_ref": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+  }
+}

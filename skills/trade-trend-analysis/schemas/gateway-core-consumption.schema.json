@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:gateway-core-consumption:v3.0-draft-1",
+  "title": "Extra consumer-side strong contract beyond the current gateway envelope",
+  "description": "The freeze gate fails closed unless these V0.51 fields exist. It never synthesizes them. Identity may be a D-close relation or a current relation captured inside the closed D-to-D+1 decision window.",
+  "type": "object",
+  "required": ["sector_market_frame", "sector_identity"],
+  "properties": {
+    "sector_market_frame": {
+      "type": "object",
+      "required": ["market_data_captured_at", "lookback_trading_days", "core_contract_tier", "close_freeze_eligible", "benchmark", "close_confirmation"],
+      "properties": {
+        "lookback_trading_days": {"const": 60},
+        "core_contract_tier": {"const": "V3_CORE_L60"},
+        "close_freeze_eligible": {"const": true},
+        "benchmark": {"type": "object", "required": ["benchmark_id", "definition_version", "trading_dates", "close_history", "history_coverage"]},
+        "close_confirmation": {"type": "object", "required": ["exchange_close_at", "earliest_freeze_at", "capture_eligible"]}
+      }
+    },
+    "sector_identity": {
+      "type": "object",
+      "required": ["verified_close_frame_hash", "identity_date_semantics"],
+      "properties": {
+        "identity_date_semantics": {
+          "enum": ["CLOSE_FREEZE_CURRENT_RELATION", "DECISION_WINDOW_CURRENT_RELATION"]
+        }
+      }
+    }
+  }
+}

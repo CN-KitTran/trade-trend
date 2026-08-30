@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:concept-review-packet:v1",
+  "type": "object",
+  "required": ["packet_version", "packet_kind", "review_policy_version", "market_date", "catalog_version", "source_market_frame_ref", "source_identity_frame_ref", "concept_count", "concepts", "decision_contract"],
+  "properties": {
+    "packet_version": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "packet_kind": {"const": "CONCEPT_REVIEW_PACKET"},
+    "review_policy_version": {"const": "source-classification-v1"},
+    "market_date": {"type": "string", "format": "date"},
+    "catalog_version": {"type": "string", "minLength": 1},
+    "source_market_frame_ref": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "source_identity_frame_ref": {"type": ["string", "null"], "pattern": "^sha256:[0-9a-f]{64}$"},
+    "concept_count": {"type": "integer", "minimum": 0},
+    "concepts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_sector_id", "source_name", "provider_type", "member_count", "member_sample", "membership_hash", "membership_ref", "membership_evidence_status", "screening_flags", "required_status", "default_without_review"],
+        "properties": {
+          "source_sector_id": {"type": "string", "minLength": 1},
+          "member_sample": {
+            "type": "array",
+            "maxItems": 8,
+            "items": {"type": "object", "required": ["code", "name"]}
+          },
+          "membership_hash": {"type": ["string", "null"]},
+          "membership_ref": {"type": ["object", "null"]},
+          "screening_flags": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+          "required_status": {"enum": ["EXCLUDED", null]},
+          "default_without_review": {"enum": ["EXCLUDED", "PROVISIONAL"]}
+        }
+      }
+    },
+    "decision_contract": {"type": "object"}
+  }
+}

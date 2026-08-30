@@ -1,0 +1,6 @@
+data/
+__pycache__/
+*.py[cod]
+.DS_Store
+skills/trade-trend-analysis/config/runtime.json
+skills/trade-trend-analysis/config/*.local.json

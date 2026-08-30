@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trade-trend-analysis:preopen-manifest:v3.0-draft-1",
+  "type": "object",
+  "required": ["artifact_kind", "schema_version", "schema_ref", "producer_version", "created_at", "artifact_hash", "run_id", "session", "release_mode", "decision_date", "market_data_as_of", "market_data_captured_at", "source_universe_version", "market_freeze_ref", "run_started_at", "validation_completed_at", "official_run_window", "run_window_status", "publication_status", "sensing_ref", "input_hashes"],
+  "properties": {
+    "artifact_kind": {"const": "preopen_manifest"},
+    "session": {"const": "PREOPEN"},
+    "publication_status": {"enum": ["DRAFT", "READY_FOR_THEME_REVIEW", "FAILED", "VALIDATED_NOT_PUBLISHED", "PUBLISHED", "AMENDED"]}
+  }
+}
